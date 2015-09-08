@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{0B3163EC-DF4C-43ED-9F15-E420D5581840}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ROMPiOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ROMPiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Calabash">
+      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.13.0\lib\Xamarin.iOS10\Calabash.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo114.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo180.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo152.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo144.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo72.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo100.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo50.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo40.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="Web References\cms.romponline.com\ROMPLocation.wsdl" />
+    <None Include="Web References\cms.romponline.com\ROMPLocation.disco" />
+    <None Include="Web References\cms.romponline.com\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Web References\cms.romponline.com\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="LocationManager.cs" />
+    <Compile Include="RegionChangedEventArgs.cs" />
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseModeViewController.cs" />
+    <Compile Include="ChooseModeViewController.designer.cs">
+      <DependentUpon>ChooseModeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInPassiveViewController.cs" />
+    <Compile Include="CheckInPassiveViewController.designer.cs">
+      <DependentUpon>CheckInPassiveViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInViewController.cs" />
+    <Compile Include="CheckInViewController.designer.cs">
+      <DependentUpon>CheckInViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationUpdateEventArgs.cs" />
+    <Compile Include="GeofenceManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://54.83.199.58/romplocservice/ROMPLocation.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\cms.romponline.com</RelPath>
+      <UpdateFromURL>http://54.83.199.58/romplocservice/ROMPLocation.asmx</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\romplogo.png" />
+    <BundleResource Include="Resources\Iconh.png" />
+    <BundleResource Include="Resources\Iconm.png" />
+    <BundleResource Include="Resources\Iconxh.png" />
+    <BundleResource Include="Resources\Iconxxh.png" />
+    <BundleResource Include="Resources\Iconxxxh.png" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
+    <BundleResource Include="Resources\cbchecked.png" />
+    <BundleResource Include="Resources\cbunchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Settings.bundle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+</Project>

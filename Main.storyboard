@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="45" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" image="romplogo.png">
+                                <rect key="frame" x="200" y="116" width="210" height="76"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="71" width="210" height="76"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" lineBreakMode="wordWrap" id="50" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" text="Welcome to the ROMP Check-in Application" numberOfLines="2" minimumFontSize="9" textAlignment="center">
+                                <rect key="frame" x="33" y="198" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="5" y="162" width="313" height="32"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" lineBreakMode="wordWrap" id="59" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" minimumFontSize="9" textAlignment="center" text="Please Sign In Below to Continue">
+                                <rect key="frame" x="25" y="182" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="189" width="313" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" lineBreakMode="wordWrap" id="62" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" minimumFontSize="9" textAlignment="center" text="Username:">
+                                <rect key="frame" x="24" y="209" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="230" width="98" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" lineBreakMode="wordWrap" id="63" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" minimumFontSize="9" textAlignment="center" text="Password:">
+                                <rect key="frame" x="24" y="250" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="296" width="98" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="64" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="340" width="46" height="30"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="427" width="152" height="30"/>
+                                </variation>
+                                <state key="highlighted"/>
+                                <state key="selected"/>
+                                <state key="disabled"/>
+                                <connections>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="65" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="86" y="265" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="316" width="280" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="66" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="106" y="285" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="250" width="280" height="30"/>
+                                </variation>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="267">
+                                <rect key="frame" x="28" y="462" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="356" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Remember Me" lineBreakMode="tailTruncation" minimumFontSize="10" id="272" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="108" y="361" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="84" y="361" width="166" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="50"/>
+                                <include reference="59"/>
+                                <include reference="62"/>
+                                <include reference="63"/>
+                                <include reference="64"/>
+                                <include reference="65"/>
+                                <include reference="66"/>
+                                <include reference="267"/>
+                                <include reference="272"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="59"/>
+                                <exclude reference="62"/>
+                                <exclude reference="63"/>
+                                <exclude reference="64"/>
+                                <exclude reference="65"/>
+                                <exclude reference="66"/>
+                                <exclude reference="267"/>
+                                <exclude reference="272"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem id="39" key="navigationItem" title="ROMP Check-In"/>
+                    <connections>
+                        <outlet property="lblHome1" destination="50" id="name-outlet-50"/>
+                        <outlet property="imgLogo" destination="45" id="name-outlet-45"/>
+                        <outlet property="lblHome2" destination="59" id="name-outlet-59"/>
+                        <outlet property="lblUsername" destination="62" id="name-outlet-62"/>
+                        <outlet property="txtUsername" destination="66" id="name-outlet-66"/>
+                        <outlet property="txtPassword" destination="65" id="name-outlet-65"/>
+                        <outlet property="btnLogin" destination="64" id="name-outlet-64"/>
+                        <outlet property="lblStoreUser" destination="272" id="name-outlet-272"/>
+                        <outlet property="cbStoreUser" destination="267" id="name-outlet-267"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-129" y="481"/>
+        </scene>
+        <scene sceneID="5">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="146" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630" y="483"/>
+        </scene>
+        <scene sceneID="70">
+            <objects>
+                <viewController id="71" sceneMemberID="viewController" customClass="CheckInPassiveViewController" storyboardIdentifier="CheckInPassiveViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="68"/>
+                        <viewControllerLayoutGuide type="bottom" id="69"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="72">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="288" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" numberOfLines="5" hidden="YES">
+                                <rect key="frame" x="139" y="240" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="150" width="280" height="107"/>
+                                </variation>
+                                <string key="text">A record that you have checked-in will be made in the log of your education activity for this ROMP rotation when this device enters a 1km radius surrounding the facility of your ROMP rotation.</string>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press the Button Below to Begin Passive Checkins." lineBreakMode="tailTruncation" minimumFontSize="10" id="289" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="5" textAlignment="center">
+                                <rect key="frame" x="139" y="98" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="92" width="280" height="116"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="290" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="136" width="46" height="30"/>
+                                <state key="normal" title="BEGIN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="200" width="125" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="300" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="140" y="300" width="46" height="30"/>
+                                <state key="normal" title="EXIT APP">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="283" width="121" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btnExit_TouchUpInside:" destination="71" id="302" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="288"/>
+                                <exclude reference="289"/>
+                                <exclude reference="290"/>
+                                <exclude reference="300"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="288"/>
+                                <include reference="289"/>
+                                <include reference="290"/>
+                                <include reference="300"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblNote" destination="288" id="name-outlet-288"/>
+                        <outlet property="lblInfo" destination="289" id="name-outlet-289"/>
+                        <outlet property="btnBeginCheckIn" destination="290" id="name-outlet-290"/>
+                        <outlet property="btnExit" destination="300" id="name-outlet-300"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="185"/>
+        </scene>
+        <scene sceneID="77">
+            <objects>
+                <viewController id="78" sceneMemberID="viewController" customClass="ChooseModeViewController" storyboardIdentifier="ChooseModeViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="75"/>
+                        <viewControllerLayoutGuide type="bottom" id="76"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="79">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="Check-In Mode" lineBreakMode="wordWrap" minimumFontSize="10" id="255" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" numberOfLines="3">
+                                <rect key="frame" x="139" y="106" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="2" y="92" width="316" height="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" minimumFontSize="10" id="256" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="5" textAlignment="center" text="Automatically signs in when this device enters the premises of your ROMP rotation.">
+                                <rect key="frame" x="139" y="192" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="154" width="280" height="72"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" minimumFontSize="10" id="257" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" numberOfLines="5" text="Manually sign in when you arrive on the premises of your ROMP rotation.">
+                                <rect key="frame" x="139" y="298" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="255" width="280" height="58"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="258" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect">
+                                <rect key="frame" x="137" y="368" width="46" height="30"/>
+                                <state key="normal" title="ACTIVE MODE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="78" y="321" width="168" height="30"/>
+                                </variation>
+                                <state key="highlighted"/>
+                                <state key="selected"/>
+                                <state key="disabled"/>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="273" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="252" width="46" height="30"/>
+                                <state key="normal" title="PASSIVE MODE">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="214" width="180" height="30"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="287" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" numberOfLines="6">
+                                <rect key="frame" x="136" y="398" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="398" width="280" height="85"/>
+                                </variation>
+                                <string key="text">Note: A log of your education activity during your rotation is mandatory for all ROMP rotations, and is required for learner funding from ROMP.</string>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="255"/>
+                                <exclude reference="256"/>
+                                <exclude reference="257"/>
+                                <exclude reference="258"/>
+                                <exclude reference="287"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="255"/>
+                                <include reference="256"/>
+                                <include reference="257"/>
+                                <include reference="258"/>
+                                <include reference="273"/>
+                                <include reference="287"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnPassive" destination="273" id="name-outlet-273"/>
+                        <outlet property="btnActive" destination="258" id="name-outlet-258"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="355" y="480"/>
+        </scene>
+        <scene sceneID="84">
+            <objects>
+                <viewController id="85" sceneMemberID="viewController" customClass="CheckInViewController" storyboardIdentifier="CheckInViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82"/>
+                        <viewControllerLayoutGuide type="bottom" id="83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="86">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="291" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="6" textAlignment="center">
+                                <rect key="frame" x="139" y="148" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="150" width="280" height="103"/>
+                                </variation>
+                                <string key="text">Click the button below to Check In at the site of your ROMP rotation. This device must be within a 1km radius of the facility in order for the Check-In to be logged. Remember to Check-Out before leaving the facility.</string>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="292" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="CHECK IN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="270" width="125" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="301" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="140" y="333" width="46" height="30"/>
+                                <state key="normal" title="EXIT APP">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="333" width="118" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="291"/>
+                                <exclude reference="292"/>
+                                <exclude reference="301"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="291"/>
+                                <include reference="292"/>
+                                <include reference="301"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblText" destination="291" id="name-outlet-291"/>
+                        <outlet property="btnCheckIn" destination="292" id="name-outlet-292"/>
+                        <outlet property="btnExit" destination="301" id="name-outlet-301"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="romplogo.png" width="210" height="76"/>
+        <image name="Iconh.png" width="72" height="72"/>
+        <image name="Iconm.png" width="48" height="48"/>
+        <image name="Iconxh.png" width="96" height="96"/>
+        <image name="Iconxxh.png" width="144" height="144"/>
+        <image name="Iconxxxh.png" width="192" height="192"/>
+        <image name="cbchecked.png" width="512" height="512"/>
+        <image name="cbunchecked.png" width="512" height="512"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

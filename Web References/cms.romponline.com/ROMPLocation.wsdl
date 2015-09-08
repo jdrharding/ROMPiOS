@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://tempuri.org/" xmlns:tns="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="LearnerLogin">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="user" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="pass" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LearnerLoginResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="LearnerLoginResult" type="tns:LoginResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="LoginResponse">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="Success" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SessionKey" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="GroupID" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="UserID" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="CheckSession">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="sessionKey" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckSessionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="CheckSessionResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetLocations">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="sessionKey" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="grpID" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetLocationsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetLocationsResult" type="tns:ArrayOfFacilityCoordinates" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ArrayOfFacilityCoordinates">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="FacilityCoordinates" nillable="true" type="tns:FacilityCoordinates" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FacilityCoordinates">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="Latitude" type="xs:double" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Longitude" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocationName" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="LocationID" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="CheckInWithLocation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="sessionKey" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="locID" type="xs:int" />
+            <xs:element minOccurs="1" maxOccurs="1" name="locLat" type="xs:double" />
+            <xs:element minOccurs="1" maxOccurs="1" name="locLong" type="xs:double" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckInWithLocationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="CheckInWithLocationResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckIn">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="sessionKey" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="locID" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckInResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="CheckInResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckOut">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="sessionKey" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="locID" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckOutResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="CheckOutResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckOutWithoutLocation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="sessionKey" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CheckOutWithoutLocationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="CheckOutWithoutLocationResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="LearnerLoginSoapIn">
+    <part name="parameters" element="tns:LearnerLogin" />
+  </message>
+  <message name="LearnerLoginSoapOut">
+    <part name="parameters" element="tns:LearnerLoginResponse" />
+  </message>
+  <message name="CheckSessionSoapIn">
+    <part name="parameters" element="tns:CheckSession" />
+  </message>
+  <message name="CheckSessionSoapOut">
+    <part name="parameters" element="tns:CheckSessionResponse" />
+  </message>
+  <message name="GetLocationsSoapIn">
+    <part name="parameters" element="tns:GetLocations" />
+  </message>
+  <message name="GetLocationsSoapOut">
+    <part name="parameters" element="tns:GetLocationsResponse" />
+  </message>
+  <message name="CheckInWithLocationSoapIn">
+    <part name="parameters" element="tns:CheckInWithLocation" />
+  </message>
+  <message name="CheckInWithLocationSoapOut">
+    <part name="parameters" element="tns:CheckInWithLocationResponse" />
+  </message>
+  <message name="CheckInSoapIn">
+    <part name="parameters" element="tns:CheckIn" />
+  </message>
+  <message name="CheckInSoapOut">
+    <part name="parameters" element="tns:CheckInResponse" />
+  </message>
+  <message name="CheckOutSoapIn">
+    <part name="parameters" element="tns:CheckOut" />
+  </message>
+  <message name="CheckOutSoapOut">
+    <part name="parameters" element="tns:CheckOutResponse" />
+  </message>
+  <message name="CheckOutWithoutLocationSoapIn">
+    <part name="parameters" element="tns:CheckOutWithoutLocation" />
+  </message>
+  <message name="CheckOutWithoutLocationSoapOut">
+    <part name="parameters" element="tns:CheckOutWithoutLocationResponse" />
+  </message>
+  <portType name="ROMPLocationSoap">
+    <operation name="LearnerLogin">
+      <input message="tns:LearnerLoginSoapIn" />
+      <output message="tns:LearnerLoginSoapOut" />
+    </operation>
+    <operation name="CheckSession">
+      <input message="tns:CheckSessionSoapIn" />
+      <output message="tns:CheckSessionSoapOut" />
+    </operation>
+    <operation name="GetLocations">
+      <input message="tns:GetLocationsSoapIn" />
+      <output message="tns:GetLocationsSoapOut" />
+    </operation>
+    <operation name="CheckInWithLocation">
+      <input message="tns:CheckInWithLocationSoapIn" />
+      <output message="tns:CheckInWithLocationSoapOut" />
+    </operation>
+    <operation name="CheckIn">
+      <input message="tns:CheckInSoapIn" />
+      <output message="tns:CheckInSoapOut" />
+    </operation>
+    <operation name="CheckOut">
+      <input message="tns:CheckOutSoapIn" />
+      <output message="tns:CheckOutSoapOut" />
+    </operation>
+    <operation name="CheckOutWithoutLocation">
+      <input message="tns:CheckOutWithoutLocationSoapIn" />
+      <output message="tns:CheckOutWithoutLocationSoapOut" />
+    </operation>
+  </portType>
+  <binding name="ROMPLocationSoap" type="tns:ROMPLocationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="LearnerLogin">
+      <soap:operation soapAction="http://tempuri.org/LearnerLogin" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckSession">
+      <soap:operation soapAction="http://tempuri.org/CheckSession" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetLocations">
+      <soap:operation soapAction="http://tempuri.org/GetLocations" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckInWithLocation">
+      <soap:operation soapAction="http://tempuri.org/CheckInWithLocation" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckIn">
+      <soap:operation soapAction="http://tempuri.org/CheckIn" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckOut">
+      <soap:operation soapAction="http://tempuri.org/CheckOut" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckOutWithoutLocation">
+      <soap:operation soapAction="http://tempuri.org/CheckOutWithoutLocation" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ROMPLocationSoap12" type="tns:ROMPLocationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="LearnerLogin">
+      <soap12:operation soapAction="http://tempuri.org/LearnerLogin" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckSession">
+      <soap12:operation soapAction="http://tempuri.org/CheckSession" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetLocations">
+      <soap12:operation soapAction="http://tempuri.org/GetLocations" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckInWithLocation">
+      <soap12:operation soapAction="http://tempuri.org/CheckInWithLocation" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckIn">
+      <soap12:operation soapAction="http://tempuri.org/CheckIn" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckOut">
+      <soap12:operation soapAction="http://tempuri.org/CheckOut" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckOutWithoutLocation">
+      <soap12:operation soapAction="http://tempuri.org/CheckOutWithoutLocation" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ROMPLocation">
+    <port name="ROMPLocationSoap" binding="tns:ROMPLocationSoap">
+      <soap:address location="http://54.83.199.58/romplocservice/ROMPLocation.asmx" />
+    </port>
+    <port name="ROMPLocationSoap12" binding="tns:ROMPLocationSoap12">
+      <soap12:address location="http://54.83.199.58/romplocservice/ROMPLocation.asmx" />
+    </port>
+  </service>
+</definitions>
