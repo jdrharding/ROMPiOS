@@ -36,9 +36,12 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Jacob Harding (FQA3Y4856M)</CodesignKey>
     <IpaPackageName>
     </IpaPackageName>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -50,6 +53,9 @@
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,6 +102,14 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\romplogo40.png" />
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo640.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo640L.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo768L.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo768S.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo1536S.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo1536L.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo1242.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\romplogo750.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
